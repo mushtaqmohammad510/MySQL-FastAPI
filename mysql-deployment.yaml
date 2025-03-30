@@ -20,6 +20,10 @@ spec:
               value: "my-secret-pw"
             - name: MYSQL_DATABASE
               value: "mysql"
+            - name: MYSQL_USER
+              value: "app_user"  # New non-root user
+            - name: MYSQL_PASSWORD
+              value: "app-pw" 
           ports:
             - containerPort: 3306
           volumeMounts:
