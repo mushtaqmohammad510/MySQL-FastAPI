@@ -10,8 +10,8 @@ app = FastAPI()
 
 # MySQL connection configuration using environment variables
 DB_HOST = os.getenv("DB_HOST", "mysql.default.svc.cluster.local")  # Default MySQL service hostname in Kubernetes
-DB_USER = os.getenv("DB_USER", "root")
-DB_PASSWORD = os.getenv("DB_PASSWORD", "my-secret-pw")
+DB_USER = os.getenv("DB_USER", "app_user")
+DB_PASSWORD = os.getenv("DB_PASSWORD", "app-pw")
 DB_NAME = os.getenv("DB_NAME", "mysql")
 DB_PORT = os.getenv("DB_PORT", "3306")
 
