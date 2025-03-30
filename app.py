@@ -44,7 +44,7 @@ class Customer(BaseModel):
     segment: str
 
     class Config:
-        orm_mode = True
+        from_mode = True
 
 # Create table if not exists (can be run once to set up the database)
 @app.on_event("startup")
