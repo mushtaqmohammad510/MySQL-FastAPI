@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: fastapi
-          image: mushtaqmohammad/fastapi-app:latest  # Replace with <your-dockerhub-username>/fastapi-app:latest if using a registry
+          image: mushtaqmohammad/fastapi-app:v1  # Replace with <your-dockerhub-username>/fastapi-app:latest if using a registry
           ports:
             - containerPort: 8000
 ---
