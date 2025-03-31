@@ -50,9 +50,9 @@ kind: Service
 metadata:
   name: mysql
 spec:
+  type: ClusterIP
   selector:
     app: mysql
   ports:
     - protocol: TCP
       port: 3306
-  clusterIP: None
